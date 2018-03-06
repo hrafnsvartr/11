@@ -1,6 +1,5 @@
 import random
 import sys
-print("""Welcome to Runic Chance-of-a-Win Bonanza""")
 
 global portfel
 portfel=5
