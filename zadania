@@ -70,6 +70,21 @@ def func(x):
         pass
 ########################
 przyjmuje integer i zwraca największą licbę jaką można ułozyć ze składowych
+#########################
+def consonant_index(x):
+    vowels=['a','e','i','o','u','y']
+    indeks = []
+    x=x.lower()
+    for i in range(len(x)):
+        if x[i] in vowels:
+            indeks.append((i))
+    return(indeks)
+    
+    
+print(consonant_index('Azabagorath'))
 
+#################
+#przyjmuje string i zwraca indeksy samogłosek, liczone od zera
+    
 
 
