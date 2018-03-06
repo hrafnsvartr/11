@@ -85,6 +85,9 @@ print(consonant_index('Azabagorath'))
 
 #################
 #przyjmuje string i zwraca indeksy samogłosek, liczone od zera
-    
+ ########################
+ func porównuje dwa stringi względem rankingu: sumy kodów ASCII danych znaków
+ znaki można traktować jako upper lub lowercase
+ Nie interesują nas znaki inne niż litery, sa one pomijane przy liczeniu rankingu
 
 
