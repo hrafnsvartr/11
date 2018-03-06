@@ -16,7 +16,7 @@ def game():
     drumOne, drumTwo, drumThree, 
     pytanie = None
     
-    
+    print("""Welcome to Runic Chance-of-a-Win Bonanza""")
     print('Would you like to play? y/n')
     pytanie = input()
     if pytanie == 'y':
