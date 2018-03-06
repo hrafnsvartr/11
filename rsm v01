@@ -1,0 +1,69 @@
+import random
+import sys
+print("""Welcome to Runic Chance-of-a-Win Bonanza""")
+
+global portfel
+portfel=5
+drums=['ᛝ', 'ᛒ', 'ᛗ', 'ᚻ', 'ᛡ', 'ᚠ']
+drumOne = None
+drumTwo = None
+drumThree = None
+
+# pytanie = None
+
+def game():
+    portfel, 
+    drumOne, drumTwo, drumThree, 
+    pytanie = None
+    
+    
+    print('Would you like to play? y/n')
+    pytanie = input()
+    if pytanie == 'y':
+        drumSpin()
+    elif pytanie == ('n'):
+        print('You still have ' + str(portfel) + ' coins. ' +'Have a nice day.')
+    elif pytanie != 'y' and pytanie != 'n':
+        print('Kindly use y or n. Thank you.')
+        game()
+        
+def drumSpin():
+    #choose characters from drums to be displayed
+    drumOne = random.choices(drums)
+    drumTwo = random.choices(drums)
+    drumThree = random.choices(drums)
+    global portfel
+    
+    print(drumOne, drumTwo, drumThree)
+    
+    if drumOne==drumTwo and drumOne==drumThree:
+        portfel +=2
+        print('You won 2 coins!')
+        print('You still have ' + str(portfel) + ' coins.')
+        game()
+        
+    if drumOne==drumThree and drumOne!=drumTwo:
+        portfel +=1
+        print('You won a coin!')
+        print('You still have ' + str(portfel) + ' coins.')
+        game()
+        
+    if drumOne!=drumTwo and drumOne!=drumThree:
+        portfel-=1
+        print('You still have ' + str(portfel) + ' coins.')
+        game()
+        
+    if drumThree==drumTwo and drumOne!=drumTwo:
+        portfel-=1
+        print('You still have ' + str(portfel) + ' coins.')
+        game()
+        
+    if drumOne==drumTwo and drumThree!=drumTwo:
+        portfel-=1
+        print('You still have ' + str(portfel) + ' coins.')
+        game()
+    if portfel < 1:
+        print('All your coins have been used, sorry.')
+        sys.exit
+    
+game()
