@@ -43,3 +43,33 @@ print(alphabet_position('The sunset sets at twelve oclock'))
 ##################
 podaj numery liter w zdaniu wg alfabetu
 loweruj, usun spacje 
+
+
+#####################
+def func(x):
+#     x = int
+    l=[]
+    l2=[]
+    y = str(x)
+    #print(y)
+    for i in y:
+        l.append(i)
+    print(l)
+    l2.append(l.pop())
+    while len(l) > 0:
+        z=(l.pop())
+     #  print(z)
+        for i in range(len(l2)):
+            if ord(z) >= ord(l2[i]):
+                l2.insert(i, z)
+                break
+        else:
+            l2.append(z)
+        print(l2)
+    else:
+        pass
+########################
+przyjmuje integer i zwraca największą licbę jaką można ułozyć ze składowych
+
+
+
