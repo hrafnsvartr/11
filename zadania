@@ -1,0 +1,27 @@
+def mean(*args):
+    
+    print(len(args))
+    x=sum(args)
+    y=x/len(args)
+    return(y)
+             
+print(mean(2,2,4,4,))
+##################
+liczy średnią pozycji, z dowolną ilością pozycji
+#################
+def check_dictionary_content(d, **args):
+    for k in args:
+        if k in d:
+            print('kjhg')
+        
+#     args = {}
+#     for k in args:
+#         args.keys() & d.keys()
+
+    
+d = {'orange':3, 'apple':1, 'dogs':10}
+print(check_dictionary_content(d, orange=2))
+####################################
+sprawdza czy w zadanym słowniu występują podane argumenty  w ilości minimum podanej
+to be resolved
+##############################
