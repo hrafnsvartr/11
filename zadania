@@ -25,3 +25,12 @@ print(check_dictionary_content(d, orange=2))
 sprawdza czy w zadanym słowniu występują podane argumenty  w ilości minimum podanej
 to be resolved
 ##############################
+def alphabet_position(w):
+#     w='The sunset sets at twelve oclock'
+    y = w.split(',')
+    for s in y:
+        x=ord(s)
+    print(s)
+print(alphabet_position('The sunset sets at twelve oclock'))
+##################
+podaj numery liter w zdaniu wg alfabetu
