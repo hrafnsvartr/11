@@ -27,10 +27,19 @@ to be resolved
 ##############################
 def alphabet_position(w):
 #     w='The sunset sets at twelve oclock'
-    y = w.split(',')
-    for s in y:
-        x=ord(s)
-    print(s)
+#     y = w.split('')
+#     for s in y:
+#         x=ord(s)
+#     print(x)
+    l = []
+    for i in w:
+        l.append(i)
+    #return(l)
+    l.sort()
+    
+    print(l)
+
 print(alphabet_position('The sunset sets at twelve oclock'))
 ##################
 podaj numery liter w zdaniu wg alfabetu
+loweruj, usun spacje 
