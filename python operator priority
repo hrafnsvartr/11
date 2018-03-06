@@ -1,0 +1,22 @@
+(…)[…]{…} - tuple, list and dict creation
+`…` string conversion
+s[I], s[i:j] indexing and slicing
+S.attr attributes
+f(…) function calls
++x, -x ~x unary operators
+x**y power right associative
+x*y, x/y, x//y, x%y multiplication, division, floor, modulo
+x+y, x-y addition and subtraction
+x<>y bit-shifting
+x&y bitwise and
+x^y bitwise XOR
+x|y Bitwise or
+xy, x>=y - comparison, identity and sequence membership
+x==y, x!=y
+x<>y
+x is y, x is not y
+x in S, x not in S
+Not X logical negation
+x and y logical and
+x or y logical or
+Lambda args: expr anonymous function
